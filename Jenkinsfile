@@ -9,7 +9,7 @@ pipeline {
     
    stage('clone the maven project'){
      steps {
-       git ''
+       git 'https://github.com/saurabhgore-code/karate-sample.git'
      }
    }
        stage('run image') {
