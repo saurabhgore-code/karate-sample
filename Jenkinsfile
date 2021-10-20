@@ -3,6 +3,9 @@ podTemplate(containers: [
   ]) {
 
     node(POD_LABEL) {
+        stage('build image'){
+            sh 'docker build -t karate-docker /home/billion/karate-sample'
+        }
         stage('Get a Maven project') {
             git 'https://github.com/saurabhgore-code/karate-sample.git'
             container('selenium-maven') {
