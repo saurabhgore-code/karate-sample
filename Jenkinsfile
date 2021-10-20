@@ -1,5 +1,5 @@
 podTemplate(containers: [
-    containerTemplate(name: 'selenium-maven', image: 'markhobson/maven-chrome:jdk-11', command: 'sleep', args: '99d')
+    containerTemplate(name: 'karate-maven', image: 'karate-docker', command: 'sleep', args: '99d')
   ]) {
 
     node(POD_LABEL) {
